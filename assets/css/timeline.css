@@ -1,3 +1,4 @@
+/* desktop-first */
 .timeline {
   text-align: justify;
   text-justify: inter-word;
@@ -12,7 +13,7 @@
   font-size: 1.03em;
   padding: 50px;
   list-style: none;
-  /*max-width: 80%;*/
+  max-width: 80%;
 }
 
 @media (max-width: 767px) {

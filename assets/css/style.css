@@ -9508,6 +9508,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* desktop-first */
 .timeline {
   text-align: justify;
   text-justify: inter-word;
@@ -9522,7 +9523,7 @@ textarea.form-control-lg {
   font-size: 1.03em;
   padding: 50px;
   list-style: none;
-  /*max-width: 80%;*/
+  max-width: 80%;
 }
 
 @media (max-width: 767px) {
@@ -9684,6 +9685,11 @@ a.theme-link {
 
 .resume-profile-image {
   max-width: 120px;
+  height: auto;
+  /*	max-width: 10rem;
+  width: 10rem;
+   height: auto;
+   border-radius: 50%;*/
 }
 
 .resume-intro {
@@ -9762,7 +9768,7 @@ a:hover {
 }
 
 .home-profile-image {
-  width: 20rem;
+  width: 15rem;
   height: auto;
   border-radius: 50%;
 }
