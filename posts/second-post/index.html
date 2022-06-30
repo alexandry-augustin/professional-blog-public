@@ -35,7 +35,9 @@
 
 	<body>
 		<div class="container d-flex h-100 flex-column"
-			style="max-width: 960px;">
+			
+			style="max-width: 52em;"
+		>
 			<nav class="navbar sticky-top navbar-expand-md navbar-light bg-white">
 	<div class="container-fluid px-0">
 
@@ -43,9 +45,13 @@
 		
 		<a class="navbar-brand" href="/">Alexandry AUGUSTIN, PhD</a>
 
-		<button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
-			data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
+		<button class="navbar-toggler navbar-light" 
+				type="button" 
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" 
+				aria-controls="navbarSupportedContent" 
+				aria-expanded="false"
+				aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -125,10 +131,9 @@
 
 	</div>
 </nav>
-
 			
 	<h1 class="py-5">Second Post</h1>
-	<div class="px-3 text-muted">May 1, 2022</div>
+	<div class="px-3 text-muted">1 May 2022</div>
     <div class="px-3">
 	
 		<span class="badge-outline rounded-pill text-muted" style="border-color: #B0BEC5;">#post</span>
@@ -143,13 +148,13 @@
 		<form id="contact_form" method="POST"> 
 
 	<div class="mb-3">
-		
+		<label for="input_email" class="form-label">Email address:</label>
 		<input type="email"  name="email" class="form-control" id="input_email" aria-describedby="emailHelp" placeholder="email@address.com">
 		<div id="emailHelp" class="form-text">* Your email will never be shared with anyone else.</div>
 	</div>
 
 	<div class="mb-3">
-		
+		<label for="form_control_textarea">Message:</label>
 		<textarea class="form-control" id="form_control_textarea" rows="3" placeholder="Message" name="message"></textarea>
 	</div>
 	
@@ -185,7 +190,7 @@
 <script type='text/javascript' charset='utf-8' src='/assets/scripts/contact_form.js'></script>
 	</div>
 
-			<footer class="row py-3">
+			<footer class="mt-auto py-3">
 	<div class="col text-center">
 		&copy; 2022 Alexandry Augustin, PhD | <a href="/credits/">Credits</a>
 	</div>
