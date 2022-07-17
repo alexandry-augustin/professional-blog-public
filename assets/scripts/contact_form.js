@@ -2,7 +2,8 @@
 
 var message = "";
 
-document.getElementById("submit_btn").onclick = function()
+/*document.getElementById("submit_btn").onclick = function()*/
+function submit_contact_form(id)
 {
 	var form = document.getElementById('contact_form');
 	var message = $(form).serialize();
@@ -11,7 +12,7 @@ document.getElementById("submit_btn").onclick = function()
 	if(do_send)
 	{
 		$.ajax({
-		    url: "https://formspree.io/f/maylpzzb", 
+		    url: "https://formspree.io/f/" + id, 
 		    method: "POST",
 		    data: {message: message},
 		    dataType: "json"

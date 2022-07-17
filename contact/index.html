@@ -126,6 +126,29 @@
 					
                 
 
+				<li class="nav-item dropdown">
+	<a class="nav-link dropdown-toggle" 
+	   data-bs-toggle="dropdown" 
+	   href="#" 
+	   role="button"
+	   aria-expanded="false">Language</a>
+	<ul class="dropdown-menu text-center ms-auto border-0">
+	
+		
+			
+		
+		
+		<li><a class="dropdown-item" href="#"><span class="flag-icon flag-icon-gb"></span> English</a></li>
+		<li><a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr"></span> Français</a></li>
+		<li><a class="dropdown-item" href="#"><span class="flag-icon flag-icon-es"></span> Español</a></li>
+		
+		<!--
+		<li><hr class="dropdown-divider"></li>
+		<li><a class="dropdown-item" href="#">Separated link</a></li>
+		-->
+	</ul>
+</li>
+
 			</ul>
 		</div>
 
@@ -217,26 +240,53 @@
 		</div>
 		
 		<div class="p-3	flex-fill">
-			<form id="contact_form" method="POST"> 
+			<form id="contact_form">  
 
 	<div class="mb-3">
-		<label for="input_email" class="form-label">Email address</label>
-		<input type="email"  name="email" class="form-control" id="input_email" aria-describedby="emailHelp" placeholder="email@address.com">
-		<div id="emailHelp" class="form-text">* Your email will never be shared with anyone else.</div>
+		<label for="input_email" class="form-label">
+			Email:
+		</label>
+		<input type="email" 
+		       name="email" 
+			   class="form-control" 
+			   id="input_email" 
+			   aria-describedby="emailHelp" 
+			   placeholder="email@address.com">
+		<div id="emailHelp" class="form-text">
+			* Your email will never be shared with anyone else.
+		</div>
 	</div>
 
 	<div class="mb-3">
-		<label for="input_subject" class="form-label">Subject</label>
-		<input name="subject" class="form-control" type="text" placeholder="Subject" id="input_subject">
+		<label for="input_subject" class="form-label">
+			Subject:
+		</label>
+		<input name="subject" 
+		       class="form-control" 
+			   type="text" 
+			   placeholder="Subject" 
+			   id="input_subject">
 	</div>
 
 	<div class="mb-3">
-		<label for="form_control_textarea">Message</label>
-		<textarea class="form-control" id="form_control_textarea" rows="3" placeholder="Message" name="message"></textarea>
+		<label for="form_control_textarea">Message:</label>
+		<textarea class="form-control" 
+		          id="form_control_textarea" 
+				  rows="3" 
+				  placeholder="Message" 
+				  name="message">
+		</textarea>
 	</div>
 	
 	<div class="text-end">
-		<button id="submit_btn" type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmationModal">Send</button>
+		<button id="submit_btn" 
+		        type="submit" 
+				onClick="submit_contact_form('maylpzzb')"
+				class="btn btn-primary" 
+				data-bs-toggle="modal" 
+				data-bs-target="#confirmationModal">
+			Send
+		</button>
 	</div>
 	
 	
@@ -247,16 +297,30 @@
 
 
 
-<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" 
+     id="confirmationModal" 
+	 tabindex="-1" 
+	 aria-labelledby="exampleModalLabel" 
+	 aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-header border-0">
-				<h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				<h5 class="modal-title" id="exampleModalLabel">
+					Thank You!
+				</h5>
+				<button type="button" 
+				        class="btn-close" 
+						data-bs-dismiss="modal" 
+						aria-label="Close">
+				</button>
 			</div>
 			<div class="modal-body">Your message has been sent successfully.</div>
 			<div class="modal-footer border-0">
-				<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+				<button type="button" 
+				        class="btn btn-primary" 
+						data-bs-dismiss="modal">
+						Close
+				</button>
 			</div>
 		</div>
 	</div>
@@ -264,6 +328,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type='text/javascript' charset='utf-8' src='/assets/scripts/contact_form.js'></script>
+
 		</div>
 	</div>
 
