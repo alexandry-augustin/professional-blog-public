@@ -9713,6 +9713,13 @@ textarea.form-control-lg {
     border-left: 0;
   }
 }
+.overme {
+  width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 /*********** Theme Generic **********/
 body {
   -webkit-font-smoothing: antialiased;
