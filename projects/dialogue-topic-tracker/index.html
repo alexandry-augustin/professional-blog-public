@@ -126,21 +126,164 @@
 	</div>
 </nav>
 			
-	<h1 class="py-5">Second Post</h1>
+	<h1 class="py-5">Dialogue Topic Tracker</h1>
 	<div class="px-3 text-muted">May 1, 2022</div>
     <div class="px-3">
 	
 		
-			<span class="badge-outline rounded-pill text-muted" style="border-color: #B0BEC5;">#post</span>
+			<span class="badge-outline rounded-pill text-muted" style="border-color: #B0BEC5;">#project</span>
+		
+			<span class="badge-outline rounded-pill text-muted" style="border-color: #B0BEC5;">#publications</span>
+		
+			<span class="badge-outline rounded-pill text-muted" style="border-color: #B0BEC5;">#research</span>
+		
+			<span class="badge-outline rounded-pill text-muted" style="border-color: #B0BEC5;">#machinelearning</span>
 		
 	
 </div>
 	<div class="px-3 justify-all"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
+
+	<h1 class="h2">Timeline</h1>
+	<canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+
+<script src="/assets/scripts/dashboard.js"></script>
+	
+	<h2>Dataset</h2>
+	<div class=""> 
+    <table class="table table-borderless table-striped table-sm">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+                <th scope="col">Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1,001</td>
+                <td>random</td>
+                <td>data</td>
+                <td>placeholder</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>1,002</td>
+                <td>placeholder</td>
+                <td>irrelevant</td>
+                <td>visual</td>
+                <td>layout</td>
+            </tr>
+            <tr>
+                <td>1,003</td>
+                <td>data</td>
+                <td>rich</td>
+                <td>dashboard</td>
+                <td>tabular</td>
+            </tr>
+            <tr>
+                <td>1,003</td>
+                <td>information</td>
+                <td>placeholder</td>
+                <td>illustrative</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>1,004</td>
+                <td>text</td>
+                <td>random</td>
+                <td>layout</td>
+                <td>dashboard</td>
+            </tr>
+            <tr>
+                <td>1,005</td>
+                <td>dashboard</td>
+                <td>irrelevant</td>
+                <td>text</td>
+                <td>placeholder</td>
+            </tr>
+            <tr>
+                <td>1,006</td>
+                <td>dashboard</td>
+                <td>illustrative</td>
+                <td>rich</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>1,007</td>
+                <td>placeholder</td>
+                <td>tabular</td>
+                <td>information</td>
+                <td>irrelevant</td>
+            </tr>
+            <tr>
+                <td>1,008</td>
+                <td>random</td>
+                <td>data</td>
+                <td>placeholder</td>
+                <td>text</td>
+            </tr>
+            <tr>
+                <td>1,009</td>
+                <td>placeholder</td>
+                <td>irrelevant</td>
+                <td>visual</td>
+                <td>layout</td>
+            </tr>
+            <tr>
+                <td>1,010</td>
+                <td>data</td>
+                <td>rich</td>
+                <td>dashboard</td>
+                <td>tabular</td>
+            </tr>
+            <tr>
+                <td>1,011</td>
+                <td>information</td>
+                <td>placeholder</td>
+                <td>illustrative</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>1,012</td>
+                <td>text</td>
+                <td>placeholder</td>
+                <td>layout</td>
+                <td>dashboard</td>
+            </tr>
+            <tr>
+                <td>1,013</td>
+                <td>dashboard</td>
+                <td>irrelevant</td>
+                <td>text</td>
+                <td>visual</td>
+            </tr>
+            <tr>
+                <td>1,014</td>
+                <td>dashboard</td>
+                <td>illustrative</td>
+                <td>rich</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>1,015</td>
+                <td>random</td>
+                <td>tabular</td>
+                <td>information</td>
+                <td>text</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
 	<h2>References</h2>
 	<div class="p-3">
-		<div class="py-4"><strong>Leave a message: </strong></div>
-		
+		<div class="pb-4"><strong>Leave a message: </strong></div>
 		<form id="contact_form" method="POST"> 
 
 	<div class="mb-3">
