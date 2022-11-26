@@ -9720,6 +9720,14 @@ textarea.form-control-lg {
   text-overflow: ellipsis;
 }
 
+/* https://blog.hubspot.com/website/css-drop-cap */
+#drop-cap {
+  float: left;
+  line-height: 85%;
+  width: 0.7em;
+  font-size: 400%;
+}
+
 /*********** Theme Generic **********/
 body {
   -webkit-font-smoothing: antialiased;
