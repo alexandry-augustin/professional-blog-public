@@ -1,50 +1,66 @@
-/* https://jsfiddle.net/228d4snb/ */
-
 var message = "";
 
 /*document.getElementById("submit_btn").onclick = function()*/
 function submit_contact_form(id)
 {
-	var form = document.getElementById('contact_form');
-	var message = $(form).serialize();
+    // https://jsfiddle.net/228d4snb/
 
-	var do_send = false;
-	if(do_send)
-	{
-		$.ajax({
-		    url: "https://formspree.io/f/" + id, 
-		    method: "POST",
-		    data: {message: message},
-		    dataType: "json"
-		});
-	}
-    
- 	window.console.log(message)
-    
-   	var do_alert = false;
-	if(do_alert)
-	{
-		window.alert('Thank you for your email!');
-	}
-	
-	var do_inline = false;
-	if(do_inline)
-	{
-		document.getElementById("confirm").innerHTML = 'Thank you for your email!'
-	}
-    
-	var do_toast = false;
-	if(do_toast)
-	{
-		var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-		var toastList = toastElList.map(function(toastEl) {
-		// Creates an array of toasts (it only initializes them)
-		  return new bootstrap.Toast(toastEl) // No need for options; use the default options
-		});
-		toastList.forEach(toast => toast.show()); // This show them
+    let form = document.getElementById('contact_form');
+    let message = $(form).serialize();
 
-		//console.log(toastList); // Testing to see if it works
+    let do_send = true;
+    if(do_send)
+    {
+    	$.ajax({
+    	    url: 'https://formspree.io/f/' + id, 
+    	    method: 'POST',
+    	    data: { message: message },
+    	    dataType: 'json'
+    	});
     }
-    
-    return false;
+
+    return true;
+}
+
+function show_confirmation()
+{
+    let do_alert = false;
+    if(do_alert)
+    {
+        window.alert('Thank you for your email!');
+    }
+
+    let do_modal = true;
+    if(do_modal)
+    {
+        let confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        confirmationModal.show();
+    }
+
+    let do_inline = false;
+    if(do_inline)
+    {
+        document.getElementById("confirm").innerHTML = 'Thank you for your email!'
+    }
+
+    let do_toast = false;
+    if(do_toast)
+    {
+        let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+        let toastList = toastElList.map(function(toastEl) {
+            // Creates an array of toasts (it only initializes them)
+            return new bootstrap.Toast(toastEl) // No need for options; use the default options
+        });
+        toastList.forEach(toast => toast.show()); // This show them
+
+        //console.log(toastList); // Testing to see if it works
+    }
+}
+
+function on_submit_request(id)
+{
+    //TODO form_validation()
+    let success = submit_contact_form(id);
+    if(success)
+        show_confirmation();
 };

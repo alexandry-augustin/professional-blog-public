@@ -69,8 +69,7 @@
 		
 		
         
-            
-            <a class="navbar-brand"></a>
+		    <a class="navbar-brand" href="/">Alexandry AUGUSTIN</a>
         
 
 		<button class="navbar-toggler navbar-light" 
@@ -150,26 +149,14 @@
 	</div>
 </nav>
 			
-	<main class="row py-5 flex-fill align-items-center">
-		<div class="col text-center">
 
-            
-                
-            
-			<picture><source type="image/avif" srcset="/images/A9Yn88FRxP-100.avif 100w, /images/A9Yn88FRxP-300.avif 300w, /images/A9Yn88FRxP-600.avif 600w" sizes="20rem"><source type="image/webp" srcset="/images/A9Yn88FRxP-100.webp 100w, /images/A9Yn88FRxP-300.webp 300w, /images/A9Yn88FRxP-600.webp 600w" sizes="20rem"><source type="image/jpeg" srcset="/images/A9Yn88FRxP-100.jpeg 100w, /images/A9Yn88FRxP-300.jpeg 300w, /images/A9Yn88FRxP-600.jpeg 600w" sizes="20rem"><img class="home-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" alt="avatar" loading="lazy" decoding="async" src="/images/A9Yn88FRxP-100.jpeg" width="600" height="600"></picture> 
+	<h1 class="py-5">Contact Me</h1>
+	
+	<div class="d-md-flex ">
+		<div class="p-3 ps-md-0 flex-fill">
+			<p>Send me a message by <a href="mailto:alexandry.augustin.jobs@gmail.com">email</a>, or use this form.</p>
+
 			
-
-			<p class="h2 pt-4">Alexandry AUGUSTIN</p>
-
-			<p class="h4 text-muted">
-                
-                
-                
-                Machine Learning Engineer
-            </p>
-            
-			
-
 			<section class="text-muted">
 
 	
@@ -258,9 +245,111 @@
 
 </section>
 
-			
 		</div>
-	</main>
+		
+		<div class="p-3	flex-fill">
+			<form id="contact_form"
+     
+    method="POST"
+    >
+
+    <div class="mb-3">
+        <label for="input_email" 
+            class="form-label">
+            Email:
+        </label>
+        <input type="email" 
+               name="email" 
+               class="form-control" 
+               id="input_email" 
+               aria-describedby="email_help" 
+               placeholder="email@address.com"
+               required >
+        <div id="email_help" 
+            class="form-text">
+            * Your email will never be shared with anyone else.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="input_subject" 
+            class="form-label">
+            Subject:
+        </label>
+        <input name="subject" 
+               class="form-control" 
+               type="text" 
+               placeholder="Subject" 
+               id="input_subject"
+               required >
+    </div>
+
+    <div class="mb-3">
+        <label for="form_control_textarea">Message:</label>
+        <textarea class="form-control" 
+                  id="form_control_textarea" 
+                  rows="3" 
+                  placeholder="Message" 
+                  name="message" 
+                  required ></textarea>
+    </div>
+    
+    <div class="text-end">
+        <button id="submit_btn" 
+            
+            type="button"
+            class="btn btn-primary" 
+            onclick="on_submit_request('maylpzzb')"
+            
+            
+                >
+            Send
+        </button>
+    </div>
+    
+    
+
+</form>
+
+
+
+
+
+<div class="modal fade" 
+     id="confirmationModal" 
+     tabindex="-1" 
+     aria-labelledby="exampleModalLabel" 
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h5 class="modal-title" 
+                    id="exampleModalLabel">
+                    Thank You!
+                </h5>
+                <button type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal" 
+                        aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">Your message has been sent successfully.</div>
+            <div class="modal-footer border-0">
+                <button type="button" 
+                        class="btn btn-primary" 
+                        data-bs-dismiss="modal">
+                        Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type='text/javascript' charset='utf-8' src='/assets/scripts/contact_form.js'></script>
+		</div>
+	</div>
+
 
 			<footer class="mt-auto py-3">
 	<div class="col text-center">
