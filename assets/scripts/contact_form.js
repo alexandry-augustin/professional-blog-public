@@ -33,8 +33,8 @@ function show_confirmation()
     let do_modal = true;
     if(do_modal)
     {
-        let confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
-        confirmationModal.show();
+        let confirmation_modal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        confirmation_modal.show();
     }
 
     let do_inline = false;
