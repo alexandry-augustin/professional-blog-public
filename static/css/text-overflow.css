@@ -1,0 +1,8 @@
+/* https://stackoverflow.com/questions/15292708/text-overflow-css-truncation */
+/* https://stackoverflow.com/questions/42900585/text-overflow-ellipsis-the-dots-should-be-center-of-the-text */
+.overme {
+    width: 300px;
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,8 @@
+/* https://blog.hubspot.com/website/css-drop-cap */
+.drop-cap 
+{
+    float: left;
+    line-height: 85%;
+    width: .7em;
+    font-size: 400%;
+}
