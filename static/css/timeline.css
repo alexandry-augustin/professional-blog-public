@@ -1,7 +1,7 @@
 /* desktop-first */
 
 :root {
-    --timeline-color: #000000;
+    --timeline-color: var(--foreground);
 }
 
 .timeline {
@@ -84,7 +84,7 @@
     -webkit-box-shadow: 0 0 0 3px var(--timeline-color);
     box-shadow: 0 0 0 3px var(--timeline-color);
     left: -55.8px;
-    background: #fff;
+    background: var(--background);
     border-radius: 50%;
     height: 9px;
     width: 9px;
@@ -105,7 +105,7 @@
     border-top-right-radius: 0;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
-    border-right: 3px solid #727cf5;
+    border-right: 3px solid var(--timeline-color);
 }
 
 .rtl .timeline .event::before {
