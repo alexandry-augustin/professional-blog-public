@@ -26,7 +26,7 @@
         
     </head>
     
-    <body class="min-h-dvh antialiased" hx-headers='{"X-CSRFToken": "8ULLHOFQ5vwqNzcoxshBNm9qKlcYwiRGS1IpstkTt98rBth289Gnu9PSIoRsk19j"}'>
+    <body class="min-h-dvh antialiased" hx-headers='{"X-CSRFToken": "fTpRQccEOzbBvfTGyx3Q4Sh6jIAMADukYOtlAPCMmJlHdQC8CJgYHzk5yZO9ccYc"}'>
         
 
         <div class="container mx-auto min-h-dvh max-w-7xl px-6">
@@ -314,7 +314,7 @@
 
                 <main class="min-w-0 flex-1 flex flex-col min-h-dvh justify-between">
                     <div>
-                        <div class="block md:hidden">
+                        <div class="block md:hidden sticky top-0 bg-background z-40">
                             <nav class="h-16 flex justify-between items-center ">
     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
         <div class="whitespace-nowrap ">
@@ -559,7 +559,7 @@
             
             
 
-            <div class="flex flex-col gap-1 items-center pb-6">
+            <div class="flex flex-col gap-1 items-center pb-3">
                 <img class="h-auto w-30 rounded-full mx-auto" 
                     src="/static/avatar_small.avif"
                     alt="avatar">
@@ -571,6 +571,167 @@
                 </div>
             </div>
 
+            <div class="w-full">
+                
+
+<div
+    class="
+    shrink-0
+    bg-border
+    
+        h-[1px] w-full
+    
+    
+    "
+    role="none"
+    aria-orientation="horizontal"
+    
+></div>
+
+                <div class="mx-auto w-30 py-1">
+                    
+
+
+<section class="w-full flex justify-between gap-6">
+    
+    
+        
+        
+
+<div 
+    x-data="{
+        tooltipVisible: false,
+        tooltipText: 'Email',
+        tooltipArrow: true,
+        tooltipPosition: 'bottom',
+    }"
+    x-init="$refs.content.addEventListener('mouseenter', () => { tooltipVisible = true; }); $refs.content.addEventListener('mouseleave', () => { tooltipVisible = false; });"
+    class="relative">
+    
+    <div x-ref="tooltip" x-show="tooltipVisible" :class="{ 'top-0 left-1/2 -translate-x-1/2 -mt-0.5 -translate-y-full' : tooltipPosition == 'top', 'top-1/2 -translate-y-1/2 -ml-0.5 left-0 -translate-x-full' : tooltipPosition == 'left', 'bottom-0 left-1/2 -translate-x-1/2 -mb-0.5 translate-y-full' : tooltipPosition == 'bottom', 'top-1/2 -translate-y-1/2 -mr-0.5 right-0 translate-x-full' : tooltipPosition == 'right' }" class="absolute w-auto text-sm" x-cloak>
+        <div x-show="tooltipVisible" x-transition class="relative px-2 py-1 text-white rounded bg-black/90">
+            <p x-text="tooltipText" class="block flex-shrink-0 text-xs whitespace-nowrap"></p>
+            <div x-ref="tooltipArrow" x-show="tooltipArrow" :class="{ 'bottom-0 -translate-x-1/2 left-1/2 w-2.5 translate-y-full' : tooltipPosition == 'top', 'right-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px translate-x-full' : tooltipPosition == 'left', 'top-0 -translate-x-1/2 left-1/2 w-2.5 -translate-y-full' : tooltipPosition == 'bottom', 'left-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px -translate-x-full' : tooltipPosition == 'right' }" class="inline-flex overflow-hidden absolute justify-center items-center">
+                <div :class="{ 'origin-top-left -rotate-45' : tooltipPosition == 'top', 'origin-top-left rotate-45' : tooltipPosition == 'left', 'origin-bottom-left rotate-45' : tooltipPosition == 'bottom', 'origin-top-right -rotate-45' : tooltipPosition == 'right' }" class="w-1.5 h-1.5 transform bg-black/90"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div x-ref="content">
+            <a href="mailto:alexandry.augustin.jobs@gmail.com"
+                class="inline-flex items-center text-foreground"
+                target="_blank"
+                aria-label="Email"
+                
+                
+                >
+                <i data-lucide="mail" class="size-4" stroke-width="1"></i>
+
+            </a>
+        </div>
+</div>
+    
+        
+        
+
+<div 
+    x-data="{
+        tooltipVisible: false,
+        tooltipText: 'Github',
+        tooltipArrow: true,
+        tooltipPosition: 'bottom',
+    }"
+    x-init="$refs.content.addEventListener('mouseenter', () => { tooltipVisible = true; }); $refs.content.addEventListener('mouseleave', () => { tooltipVisible = false; });"
+    class="relative">
+    
+    <div x-ref="tooltip" x-show="tooltipVisible" :class="{ 'top-0 left-1/2 -translate-x-1/2 -mt-0.5 -translate-y-full' : tooltipPosition == 'top', 'top-1/2 -translate-y-1/2 -ml-0.5 left-0 -translate-x-full' : tooltipPosition == 'left', 'bottom-0 left-1/2 -translate-x-1/2 -mb-0.5 translate-y-full' : tooltipPosition == 'bottom', 'top-1/2 -translate-y-1/2 -mr-0.5 right-0 translate-x-full' : tooltipPosition == 'right' }" class="absolute w-auto text-sm" x-cloak>
+        <div x-show="tooltipVisible" x-transition class="relative px-2 py-1 text-white rounded bg-black/90">
+            <p x-text="tooltipText" class="block flex-shrink-0 text-xs whitespace-nowrap"></p>
+            <div x-ref="tooltipArrow" x-show="tooltipArrow" :class="{ 'bottom-0 -translate-x-1/2 left-1/2 w-2.5 translate-y-full' : tooltipPosition == 'top', 'right-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px translate-x-full' : tooltipPosition == 'left', 'top-0 -translate-x-1/2 left-1/2 w-2.5 -translate-y-full' : tooltipPosition == 'bottom', 'left-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px -translate-x-full' : tooltipPosition == 'right' }" class="inline-flex overflow-hidden absolute justify-center items-center">
+                <div :class="{ 'origin-top-left -rotate-45' : tooltipPosition == 'top', 'origin-top-left rotate-45' : tooltipPosition == 'left', 'origin-bottom-left rotate-45' : tooltipPosition == 'bottom', 'origin-top-right -rotate-45' : tooltipPosition == 'right' }" class="w-1.5 h-1.5 transform bg-black/90"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div x-ref="content">
+            <a href="//github.com/alexandry-augustin"
+                class="inline-flex items-center text-foreground"
+                target="_blank"
+                aria-label="Github"
+                
+                
+                >
+                <span class="size-4 inline-flex items-center justify-center fill-current [&>svg]:!w-6 [&>svg]:!h-6 [&>svg]:fill-current [&>svg]:block"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <title>GitHub</title>
+    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+</svg>
+</span>
+
+            </a>
+        </div>
+</div>
+    
+        
+        
+
+<div 
+    x-data="{
+        tooltipVisible: false,
+        tooltipText: 'LinkedIn',
+        tooltipArrow: true,
+        tooltipPosition: 'bottom',
+    }"
+    x-init="$refs.content.addEventListener('mouseenter', () => { tooltipVisible = true; }); $refs.content.addEventListener('mouseleave', () => { tooltipVisible = false; });"
+    class="relative">
+    
+    <div x-ref="tooltip" x-show="tooltipVisible" :class="{ 'top-0 left-1/2 -translate-x-1/2 -mt-0.5 -translate-y-full' : tooltipPosition == 'top', 'top-1/2 -translate-y-1/2 -ml-0.5 left-0 -translate-x-full' : tooltipPosition == 'left', 'bottom-0 left-1/2 -translate-x-1/2 -mb-0.5 translate-y-full' : tooltipPosition == 'bottom', 'top-1/2 -translate-y-1/2 -mr-0.5 right-0 translate-x-full' : tooltipPosition == 'right' }" class="absolute w-auto text-sm" x-cloak>
+        <div x-show="tooltipVisible" x-transition class="relative px-2 py-1 text-white rounded bg-black/90">
+            <p x-text="tooltipText" class="block flex-shrink-0 text-xs whitespace-nowrap"></p>
+            <div x-ref="tooltipArrow" x-show="tooltipArrow" :class="{ 'bottom-0 -translate-x-1/2 left-1/2 w-2.5 translate-y-full' : tooltipPosition == 'top', 'right-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px translate-x-full' : tooltipPosition == 'left', 'top-0 -translate-x-1/2 left-1/2 w-2.5 -translate-y-full' : tooltipPosition == 'bottom', 'left-0 -translate-y-1/2 top-1/2 h-2.5 -mt-px -translate-x-full' : tooltipPosition == 'right' }" class="inline-flex overflow-hidden absolute justify-center items-center">
+                <div :class="{ 'origin-top-left -rotate-45' : tooltipPosition == 'top', 'origin-top-left rotate-45' : tooltipPosition == 'left', 'origin-bottom-left rotate-45' : tooltipPosition == 'bottom', 'origin-top-right -rotate-45' : tooltipPosition == 'right' }" class="w-1.5 h-1.5 transform bg-black/90"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div x-ref="content">
+            <a href="//linkedin.com/in/alexandryaugustin"
+                class="inline-flex items-center text-foreground"
+                target="_blank"
+                aria-label="LinkedIn"
+                
+                
+                >
+                <span class="size-4 inline-flex items-center justify-center fill-current [&>svg]:!w-6 [&>svg]:!h-6 [&>svg]:fill-current [&>svg]:block"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg></span>
+
+            </a>
+        </div>
+</div>
+    
+    
+</section>
+
+
+                </div>
+                
+
+<div
+    class="
+    shrink-0
+    bg-border
+    
+        h-[1px] w-full
+    
+    
+    "
+    role="none"
+    aria-orientation="horizontal"
+    
+></div>
+
+            </div>
+            
             <p class="text-sm text-muted-foreground " >
   
                 <div class="space-y-4 px-2 pb-3 pt-2">
@@ -636,7 +797,7 @@
 
 <div class="text-muted-foreground">
     
-    Edited 4 months, 2 weeks ago
+    Edited 4 months, 3 weeks ago
 </div>
 
 
